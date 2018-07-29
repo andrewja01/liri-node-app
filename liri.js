@@ -105,7 +105,7 @@ function spotifySong(trackTitle) {
     spotify.search({
         type: 'track',
         query: trackTitle.slice(),
-        limit: 1
+        limit: 10
     }, function (err, data) {
         if (err) {
             return console.log(err);
